@@ -20,7 +20,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://webpay3g.transbank.cl/*" ]
+        "matches": [ "https://webpay3g.transbank.cl/*" ]
     }],
 
     "action": {
