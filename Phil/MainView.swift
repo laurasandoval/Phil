@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var showingHowToEnableView: Bool = false
+    
     var body: some View {
-        Text("Hello, World! I'm Phil :D")
+        Text("Hey")
+            .onAppear {
+                self.showingHowToEnableView = true
+            }
+            .sheet(isPresented: $showingHowToEnableView) {
+                HowToEnableView()
+            }
     }
 }
 

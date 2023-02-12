@@ -21,6 +21,9 @@
 		5BBB5A0B2996F82E0020EE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59EC2996F82D0020EE73 /* Assets.xcassets */; };
 		5BF86E1E299965F500783089 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF86E1D299965F500783089 /* MainView.swift */; };
 		5BF86E202999684200783089 /* PhilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF86E1F2999684200783089 /* PhilApp.swift */; };
+		5BF86E2B29997FAC00783089 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 5BF86E2A29997FAC00783089 /* VideoPlayer */; };
+		5BF86E2D2999804800783089 /* HowToVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5BF86E2C2999804800783089 /* HowToVideo.mov */; };
+		5BF86E2F299983D400783089 /* HowToEnableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF86E2E299983D400783089 /* HowToEnableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,8 @@
 		5BBB5A0A2996F82E0020EE73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF86E1D299965F500783089 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5BF86E1F2999684200783089 /* PhilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilApp.swift; sourceTree = "<group>"; };
+		5BF86E2C2999804800783089 /* HowToVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = HowToVideo.mov; sourceTree = "<group>"; };
+		5BF86E2E299983D400783089 /* HowToEnableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToEnableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF86E2B29997FAC00783089 /* VideoPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,9 +112,11 @@
 		5BBB59D72996F82D0020EE73 /* Phil */ = {
 			isa = PBXGroup;
 			children = (
+				5BF86E2C2999804800783089 /* HowToVideo.mov */,
 				5BF86E1F2999684200783089 /* PhilApp.swift */,
 				5BBB59E62996F82D0020EE73 /* LaunchScreen.storyboard */,
 				5BF86E1D299965F500783089 /* MainView.swift */,
+				5BF86E2E299983D400783089 /* HowToEnableView.swift */,
 				5BBB59EC2996F82D0020EE73 /* Assets.xcassets */,
 				5BBB59ED2996F82D0020EE73 /* Info.plist */,
 			);
@@ -158,6 +166,9 @@
 				5BBB59F52996F82E0020EE73 /* PBXTargetDependency */,
 			);
 			name = Phil;
+			packageProductDependencies = (
+				5BF86E2A29997FAC00783089 /* VideoPlayer */,
+			);
 			productName = Phil;
 			productReference = 5BBB59D52996F82D0020EE73 /* Phil.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 5BBB59CC2996F82C0020EE73;
+			packageReferences = (
+				5BF86E2929997FAC00783089 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
+			);
 			productRefGroup = 5BBB59D62996F82D0020EE73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,6 +237,7 @@
 			files = (
 				5BBB59E82996F82D0020EE73 /* LaunchScreen.storyboard in Resources */,
 				5BBB5A0B2996F82E0020EE73 /* Assets.xcassets in Resources */,
+				5BF86E2D2999804800783089 /* HowToVideo.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +265,7 @@
 			files = (
 				5BF86E1E299965F500783089 /* MainView.swift in Sources */,
 				5BF86E202999684200783089 /* PhilApp.swift in Sources */,
+				5BF86E2F299983D400783089 /* HowToEnableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BF86E2929997FAC00783089 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BF86E2A29997FAC00783089 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BF86E2929997FAC00783089 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BBB59CD2996F82C0020EE73 /* Project object */;
 }
