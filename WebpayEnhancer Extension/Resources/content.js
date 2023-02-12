@@ -18,19 +18,16 @@ function runCheck() {
     
     // We don't want to run this infinite times 😅
     if (cardNumberInput.getAttribute("autocomplete") != "cc-number") {
-        console.log("cardNumberInput's autocomplete attribute is not cc-number");
         cardNumberInput.setAttribute("autocomplete", "cc-number");
     }
     
     // We don't want to run this infinite times 😅
     if (cardExpInput.getAttribute("autocomplete") != "cc-exp") {
-        console.log("cardExpInput's autocomplete attribute is not cc-exp");
         cardExpInput.setAttribute("autocomplete", "cc-exp");
     }
     
     // We don't want to run this infinite times 😅
     if (cardCVVInput.getAttribute("autocomplete") != "cc-csc") {
-        console.log("cardCVVInput's autocomplete attribute is not cc-csc");
         cardCVVInput.setAttribute("autocomplete", "cc-csc");
     }
 }
