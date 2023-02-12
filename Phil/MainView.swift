@@ -7,17 +7,116 @@
 
 import SwiftUI
 
+struct Cell: View {
+    let iconSystemName: String
+    let iconBackgroundColor: Color
+    let text: String
+    var chevron: Bool? = false
+    
+    var body: some View {
+        HStack {
+            ZStack {
+                Image(systemName: "app.fill")
+                    .font(.system(size: 32.0))
+                    .foregroundColor(iconBackgroundColor)
+                Image(systemName: iconSystemName)
+                    .font(.system(size: 16.0))
+                    .foregroundColor(.white)
+            }
+            .accessibilityHidden(true)
+            
+            Text(text)
+                .foregroundColor(.primary)
+            
+            if chevron ?? false {
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 14.0, weight: .semibold, design: .rounded))
+                    .foregroundColor(Color(uiColor: .tertiaryLabel))
+                    .padding(.trailing, 4.0)
+            }
+        }
+        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .padding(.horizontal)
+    }
+}
+
 struct MainView: View {
+    @AppStorage("shouldOnboardUser") var shouldOnboardUser: Bool = true
     @State private var showingHowToEnableView: Bool = false
     
     var body: some View {
-        Text("Hey")
-            .onAppear {
-                self.showingHowToEnableView = true
+        NavigationView {
+            List {
+                Section {
+                    Button(action: {
+                        self.showingHowToEnableView = true
+                    }) {
+                        Cell(
+                            iconSystemName: "sparkles",
+                            iconBackgroundColor: .accentColor,
+                            text: "Cómo activar Phil",
+                            chevron: true
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0.0))
+                    
+                    NavigationLink(destination: WhatIsThisView()) {
+                        Cell(
+                            iconSystemName: "info.circle.fill",
+                            iconBackgroundColor: .gray,
+                            text: "Qué es esto"
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 21.0))
+                }
+                Section {
+                    Cell(
+                        iconSystemName: "curlybraces",
+                        iconBackgroundColor: .blue,
+                        text: "Código fuente",
+                        chevron: true
+                    )
+                    Cell(
+                        iconSystemName: "hand.raised.fill",
+                        iconBackgroundColor: .gray,
+                        text: "Política de privacidad",
+                        chevron: true
+                    )
+                }
+                Section {
+                    Cell(
+                        iconSystemName: "heart.fill",
+                        iconBackgroundColor: .red,
+                        text: "Califica Phil en el App Store",
+                        chevron: true
+                    )
+                }
+                Section {
+                    Cell(
+                        iconSystemName: "l.square.fill",
+                        iconBackgroundColor: .black,
+                        text: "Laura Sandoval",
+                        chevron: true
+                    )
+                } header: {
+                    Text("Sobre la desarrolladora")
+                }
             }
-            .sheet(isPresented: $showingHowToEnableView) {
-                HowToEnableView()
+            .navigationTitle("Phil")
+        }
+        .onAppear {
+            if self.shouldOnboardUser {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.showingHowToEnableView = true
+                    self.shouldOnboardUser = false
+                }
             }
+        }
+        .sheet(isPresented: $showingHowToEnableView) {
+            HowToEnableView()
+        }
     }
 }
 

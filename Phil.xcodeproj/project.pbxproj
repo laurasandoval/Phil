@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B75EE022999B04000A66D28 /* WhatIsThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B75EE012999B04000A66D28 /* WhatIsThisView.swift */; };
 		5BBB59E82996F82D0020EE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59E62996F82D0020EE73 /* LaunchScreen.storyboard */; };
 		5BBB59F32996F82E0020EE73 /* Phil Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5BBB59F22996F82E0020EE73 /* Phil Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5BBB59F82996F82E0020EE73 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB59F72996F82E0020EE73 /* SafariWebExtensionHandler.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B75EE012999B04000A66D28 /* WhatIsThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsThisView.swift; sourceTree = "<group>"; };
 		5BBB59D52996F82D0020EE73 /* Phil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB59E72996F82D0020EE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BBB59EC2996F82D0020EE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				5BBB59E62996F82D0020EE73 /* LaunchScreen.storyboard */,
 				5BF86E1D299965F500783089 /* MainView.swift */,
 				5BF86E2E299983D400783089 /* HowToEnableView.swift */,
+				5B75EE012999B04000A66D28 /* WhatIsThisView.swift */,
 				5BBB59EC2996F82D0020EE73 /* Assets.xcassets */,
 				5BBB59ED2996F82D0020EE73 /* Info.plist */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				5BF86E1E299965F500783089 /* MainView.swift in Sources */,
 				5BF86E202999684200783089 /* PhilApp.swift in Sources */,
+				5B75EE022999B04000A66D28 /* WhatIsThisView.swift in Sources */,
 				5BF86E2F299983D400783089 /* HowToEnableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
