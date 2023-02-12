@@ -1,10 +1,10 @@
 {
     "extension_name": {
-        "message": "Phil Extension",
+        "message": "Phil",
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "This is Phil Extension. You should tell us what your extension does here.",
+        "message": "Autorrellena tus tarjetas de crédito y débito guardadas en Safari cuando estés comprando a través de Webpay.",
         "description": "Description of what the extension does."
     }
 }
