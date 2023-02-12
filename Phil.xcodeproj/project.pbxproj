@@ -15,7 +15,7 @@
 		5BBB59E52996F82D0020EE73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB59E42996F82D0020EE73 /* ViewController.swift */; };
 		5BBB59E82996F82D0020EE73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59E62996F82D0020EE73 /* LaunchScreen.storyboard */; };
 		5BBB59EB2996F82D0020EE73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59E92996F82D0020EE73 /* Main.storyboard */; };
-		5BBB59F32996F82E0020EE73 /* WebpayEnhancer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5BBB59F22996F82E0020EE73 /* WebpayEnhancer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5BBB59F32996F82E0020EE73 /* Phil Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5BBB59F22996F82E0020EE73 /* Phil Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5BBB59F82996F82E0020EE73 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB59F72996F82E0020EE73 /* SafariWebExtensionHandler.swift */; };
 		5BBB59FB2996F82E0020EE73 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59FA2996F82E0020EE73 /* _locales */; };
 		5BBB59FD2996F82E0020EE73 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5BBB59FC2996F82E0020EE73 /* images */; };
@@ -34,7 +34,7 @@
 			containerPortal = 5BBB59CD2996F82C0020EE73 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5BBB59F12996F82E0020EE73;
-			remoteInfo = "WebpayEnhancer Extension";
+			remoteInfo = "Phil Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5BBB59F32996F82E0020EE73 /* WebpayEnhancer Extension.appex in Embed Foundation Extensions */,
+				5BBB59F32996F82E0020EE73 /* Phil Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5BBB59D52996F82D0020EE73 /* WebpayEnhancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebpayEnhancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBB59D52996F82D0020EE73 /* Phil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB59D82996F82D0020EE73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBB59DC2996F82D0020EE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		5BBB59DE2996F82D0020EE73 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		5BBB59EA2996F82D0020EE73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BBB59EC2996F82D0020EE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BBB59ED2996F82D0020EE73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BBB59F22996F82E0020EE73 /* WebpayEnhancer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebpayEnhancer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBB59F22996F82E0020EE73 /* Phil Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Phil Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBB59F72996F82E0020EE73 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		5BBB59FA2996F82E0020EE73 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		5BBB59FC2996F82E0020EE73 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 		5BBB59CC2996F82C0020EE73 = {
 			isa = PBXGroup;
 			children = (
-				5BBB59D72996F82D0020EE73 /* WebpayEnhancer */,
-				5BBB59F62996F82E0020EE73 /* WebpayEnhancer Extension */,
+				5BBB59D72996F82D0020EE73 /* Phil */,
+				5BBB59F62996F82E0020EE73 /* Phil Extension */,
 				5BBB59D62996F82D0020EE73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,13 +107,13 @@
 		5BBB59D62996F82D0020EE73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BBB59D52996F82D0020EE73 /* WebpayEnhancer.app */,
-				5BBB59F22996F82E0020EE73 /* WebpayEnhancer Extension.appex */,
+				5BBB59D52996F82D0020EE73 /* Phil.app */,
+				5BBB59F22996F82E0020EE73 /* Phil Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BBB59D72996F82D0020EE73 /* WebpayEnhancer */ = {
+		5BBB59D72996F82D0020EE73 /* Phil */ = {
 			isa = PBXGroup;
 			children = (
 				5BBB59D82996F82D0020EE73 /* AppDelegate.swift */,
@@ -125,7 +125,7 @@
 				5BBB59ED2996F82D0020EE73 /* Info.plist */,
 				5BBB59DA2996F82D0020EE73 /* Resources */,
 			);
-			path = WebpayEnhancer;
+			path = Phil;
 			sourceTree = "<group>";
 		};
 		5BBB59DA2996F82D0020EE73 /* Resources */ = {
@@ -138,14 +138,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5BBB59F62996F82E0020EE73 /* WebpayEnhancer Extension */ = {
+		5BBB59F62996F82E0020EE73 /* Phil Extension */ = {
 			isa = PBXGroup;
 			children = (
 				5BBB59F72996F82E0020EE73 /* SafariWebExtensionHandler.swift */,
 				5BBB5A0A2996F82E0020EE73 /* Info.plist */,
 				5BBB59F92996F82E0020EE73 /* Resources */,
 			);
-			path = "WebpayEnhancer Extension";
+			path = "Phil Extension";
 			sourceTree = "<group>";
 		};
 		5BBB59F92996F82E0020EE73 /* Resources */ = {
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BBB59D42996F82D0020EE73 /* WebpayEnhancer */ = {
+		5BBB59D42996F82D0020EE73 /* Phil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BBB5A122996F82E0020EE73 /* Build configuration list for PBXNativeTarget "WebpayEnhancer" */;
+			buildConfigurationList = 5BBB5A122996F82E0020EE73 /* Build configuration list for PBXNativeTarget "Phil" */;
 			buildPhases = (
 				5BBB59D12996F82D0020EE73 /* Sources */,
 				5BBB59D22996F82D0020EE73 /* Frameworks */,
@@ -180,14 +180,14 @@
 			dependencies = (
 				5BBB59F52996F82E0020EE73 /* PBXTargetDependency */,
 			);
-			name = WebpayEnhancer;
-			productName = WebpayEnhancer;
-			productReference = 5BBB59D52996F82D0020EE73 /* WebpayEnhancer.app */;
+			name = Phil;
+			productName = Phil;
+			productReference = 5BBB59D52996F82D0020EE73 /* Phil.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5BBB59F12996F82E0020EE73 /* WebpayEnhancer Extension */ = {
+		5BBB59F12996F82E0020EE73 /* Phil Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BBB5A0E2996F82E0020EE73 /* Build configuration list for PBXNativeTarget "WebpayEnhancer Extension" */;
+			buildConfigurationList = 5BBB5A0E2996F82E0020EE73 /* Build configuration list for PBXNativeTarget "Phil Extension" */;
 			buildPhases = (
 				5BBB59EE2996F82E0020EE73 /* Sources */,
 				5BBB59EF2996F82E0020EE73 /* Frameworks */,
@@ -197,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = "WebpayEnhancer Extension";
-			productName = "WebpayEnhancer Extension";
-			productReference = 5BBB59F22996F82E0020EE73 /* WebpayEnhancer Extension.appex */;
+			name = "Phil Extension";
+			productName = "Phil Extension";
+			productReference = 5BBB59F22996F82E0020EE73 /* Phil Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5BBB59D02996F82C0020EE73 /* Build configuration list for PBXProject "WebpayEnhancer" */;
+			buildConfigurationList = 5BBB59D02996F82C0020EE73 /* Build configuration list for PBXProject "Phil" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BBB59D42996F82D0020EE73 /* WebpayEnhancer */,
-				5BBB59F12996F82E0020EE73 /* WebpayEnhancer Extension */,
+				5BBB59D42996F82D0020EE73 /* Phil */,
+				5BBB59F12996F82E0020EE73 /* Phil Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		5BBB59F52996F82E0020EE73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5BBB59F12996F82E0020EE73 /* WebpayEnhancer Extension */;
+			target = 5BBB59F12996F82E0020EE73 /* Phil Extension */;
 			targetProxy = 5BBB59F42996F82E0020EE73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,12 +444,13 @@
 		5BBB5A0F2996F82E0020EE73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebpayEnhancer Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebpayEnhancer Extension";
+				INFOPLIST_FILE = "Phil Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Phil Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,8 +463,9 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = work.lau.WebpayEnhancer.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = work.lau.Phil.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,12 +476,13 @@
 		5BBB5A102996F82E0020EE73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WebpayEnhancer Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WebpayEnhancer Extension";
+				INFOPLIST_FILE = "Phil Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Phil Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,8 +495,9 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = work.lau.WebpayEnhancer.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = work.lau.Phil.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -507,11 +511,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WebpayEnhancer/Info.plist;
+				INFOPLIST_FILE = Phil/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Phil;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -530,8 +535,9 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = work.lau.WebpayEnhancer;
+				PRODUCT_BUNDLE_IDENTIFIER = work.lau.Phil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,11 +550,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WebpayEnhancer/Info.plist;
+				INFOPLIST_FILE = Phil/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Phil;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -567,8 +574,9 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = work.lau.WebpayEnhancer;
+				PRODUCT_BUNDLE_IDENTIFIER = work.lau.Phil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BBB59D02996F82C0020EE73 /* Build configuration list for PBXProject "WebpayEnhancer" */ = {
+		5BBB59D02996F82C0020EE73 /* Build configuration list for PBXProject "Phil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BBB5A0C2996F82E0020EE73 /* Debug */,
@@ -587,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BBB5A0E2996F82E0020EE73 /* Build configuration list for PBXNativeTarget "WebpayEnhancer Extension" */ = {
+		5BBB5A0E2996F82E0020EE73 /* Build configuration list for PBXNativeTarget "Phil Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BBB5A0F2996F82E0020EE73 /* Debug */,
@@ -596,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BBB5A122996F82E0020EE73 /* Build configuration list for PBXNativeTarget "WebpayEnhancer" */ = {
+		5BBB5A122996F82E0020EE73 /* Build configuration list for PBXNativeTarget "Phil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BBB5A132996F82E0020EE73 /* Debug */,

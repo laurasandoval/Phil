@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  WebpayEnhancer Extension
+//  Phil Extension
 //
 //  Created by Lau on 10-02-23.
 //
