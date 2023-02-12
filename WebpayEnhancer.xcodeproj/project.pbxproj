@@ -512,7 +512,7 @@
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebpayEnhancer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WebpayEnhancer;
+				INFOPLIST_KEY_CFBundleDisplayName = Phil;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -549,7 +549,7 @@
 				DEVELOPMENT_TEAM = L3FVAEPEHR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebpayEnhancer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WebpayEnhancer;
+				INFOPLIST_KEY_CFBundleDisplayName = Phil;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
