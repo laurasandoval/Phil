@@ -72,34 +72,46 @@ struct MainView: View {
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 21.0))
                 }
                 Section {
-                    Cell(
-                        iconSystemName: "curlybraces",
-                        iconBackgroundColor: .blue,
-                        text: "Código fuente",
-                        chevron: true
-                    )
-                    Cell(
-                        iconSystemName: "hand.raised.fill",
-                        iconBackgroundColor: .gray,
-                        text: "Política de privacidad",
-                        chevron: true
-                    )
+                    Link(destination: URL(string: "https://github.com/laurasandoval/Phil")!) {
+                        Cell(
+                            iconSystemName: "curlybraces",
+                            iconBackgroundColor: .blue,
+                            text: "Código fuente",
+                            chevron: true
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    Link(destination: URL(string: "https://lau.work/phil/politica-de-privacidad")!) {
+                        Cell(
+                            iconSystemName: "hand.raised.fill",
+                            iconBackgroundColor: .gray,
+                            text: "Política de privacidad",
+                            chevron: true
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
                 Section {
-                    Cell(
-                        iconSystemName: "heart.fill",
-                        iconBackgroundColor: .red,
-                        text: "Califica Phil en el App Store",
-                        chevron: true
-                    )
+                    Link(destination: URL(string: "https://lau.work")!) {
+                        Cell(
+                            iconSystemName: "heart.fill",
+                            iconBackgroundColor: .red,
+                            text: "Califica Phil en el App Store",
+                            chevron: true
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
                 Section {
-                    Cell(
-                        iconSystemName: "l.square.fill",
-                        iconBackgroundColor: .black,
-                        text: "Laura Sandoval",
-                        chevron: true
-                    )
+                    Link(destination: URL(string: "https://lau.work")!) {
+                        Cell(
+                            iconSystemName: "l.square.fill",
+                            iconBackgroundColor: .black,
+                            text: "Laura Sandoval",
+                            chevron: true
+                        )
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 } header: {
                     Text("Sobre la desarrolladora")
                 }

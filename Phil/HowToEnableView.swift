@@ -16,14 +16,17 @@ struct InstructionStep: View {
     var body: some View {
         HStack(spacing: 17.0) {
             Image(systemName: systemImage)
-                .font(Font.headline.weight(.semibold))
+                .font(.system(size: 17.0, weight: .semibold, design: .rounded))
                 .foregroundColor(imageColor)
+                .frame(width: 21.0, alignment: .center)
             Text(.init(text))
         }
     }
 }
 
 struct HowToEnableView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
@@ -99,7 +102,7 @@ struct HowToEnableView: View {
                 .toolbar {
                     ToolbarItem(placement: .confirmationAction) {
                         Button(action: {
-                            print("hey")
+                            dismiss()
                         }) {
                             Text("Listo")
                         }
