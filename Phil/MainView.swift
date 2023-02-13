@@ -46,9 +46,42 @@ struct MainView: View {
     @AppStorage("shouldOnboardUser") var shouldOnboardUser: Bool = true
     @State private var showingHowToEnableView: Bool = false
     
+    let appVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+    let buildVersion: String = Bundle.main.infoDictionary?["CFBundleVersion"] as! String
+    
     var body: some View {
         NavigationView {
             List {
+                Section {
+                    HStack {
+                        Spacer()
+                        
+                        VStack(spacing: 16.0) {
+                            Image("LargeIcon")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100.0)
+                                .accessibility(hidden: true)
+                            
+                            VStack(spacing: 6.0) {
+                                Text("Phil")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                    .accessibility(addTraits: .isHeader)
+                                Text("Autorrellena tus tarjetas de crédito y débito en Webpay.")
+                                .font(.body)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
+                                .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                        
+                        Spacer()
+                    }
+                }
+                .listRowInsets(EdgeInsets(top: 0, leading: 16.0, bottom: 0, trailing: 16.0))
+                .listRowBackground(Color.clear)
+                
                 Section {
                     Button(action: {
                         self.showingHowToEnableView = true
@@ -116,7 +149,8 @@ struct MainView: View {
                     Text("Sobre la desarrolladora")
                 }
             }
-            .navigationTitle("Phil")
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear {
             if self.shouldOnboardUser {
