@@ -92,7 +92,7 @@ struct MainView: View {
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
                 Section {
-                    Link(destination: URL(string: "https://lau.work")!) {
+                    Link(destination: URL(string: "https://itunes.apple.com/app/id1671463273?action=write-review")!) {
                         Cell(
                             iconSystemName: "heart.fill",
                             iconBackgroundColor: .red,
