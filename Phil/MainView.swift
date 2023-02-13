@@ -46,9 +46,6 @@ struct MainView: View {
     @AppStorage("shouldOnboardUser") var shouldOnboardUser: Bool = true
     @State private var showingHowToEnableView: Bool = false
     
-    let appVersion: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
-    let buildVersion: String = Bundle.main.infoDictionary?["CFBundleVersion"] as! String
-    
     var body: some View {
         NavigationView {
             List {
@@ -68,7 +65,7 @@ struct MainView: View {
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                     .accessibility(addTraits: .isHeader)
-                                Text("Autorrellena tus tarjetas de crédito y débito en Webpay.")
+                                Text("Autorrellena tus tarjetas de crédito o débito en Webpay.")
                                 .font(.body)
                                 .foregroundColor(.secondary)
                                 .multilineTextAlignment(.center)

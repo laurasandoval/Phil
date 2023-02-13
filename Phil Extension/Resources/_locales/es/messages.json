@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "Autorrellena tus tarjetas de crédito y débito guardadas en Safari cuando estés comprando a través de Webpay.",
+        "message": "Autorrellena tus tarjetas de crédito o débito guardadas en Safari cuando estés comprando a través de Webpay.",
         "description": "Description of what the extension does."
     }
 }
